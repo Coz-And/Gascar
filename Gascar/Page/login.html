@@ -1,0 +1,48 @@
+<html lang="it">
+<head>
+
+  <title>Accedi – GASCAR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../CSS/Login&Registrati.css">
+  <!-- Font Awesome for icons (optional) -->
+  <script src="https://kit.fontawesome.com/a2d9c1e5b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+  <!-- Left illustration -->
+  <div class="hero">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <!-- Right form -->
+  <div class="form-card">
+    <img src="logo.png" alt="GASCAR" class="logo">
+
+    <h2>Accedi al tuo account</h2>
+
+    <form action="/login" method="POST">
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <p>Inserisci l'email</p>
+        <input type="email" name="email" placeholder="Email" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <p>Inserisci la password</p>
+        <input type="password" name="password" placeholder="Password" required>
+      </div>
+
+      <button type="submit" class="btn-primary">Entra</button>
+    </form>
+
+    <div class="footer-links">
+      <a href="../Page/passworddimenticata.html">Password dimenticata?</a> |
+      <a href="../page/Registrati.html">Non hai ancora un account? Registrati</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
