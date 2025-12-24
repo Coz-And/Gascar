@@ -52,16 +52,36 @@ body {
 
 /*-------------------------------------------------------------------HERO------------------------------------------------------------------*/
 .hero{
-    padding: 108px 48px;
-    max-width: 900px;
+  height: 80vh;
+  background-image: url("../img/1763033546819.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  max-width: 600px;
+  margin-left: 5rem;
+}
+
 .hero h1{
     font-size: 48px;
     margin-bottom: 16px;
 }
 .hero p{
     font-size: 18px;
-    color: #555;
+    color: #e9e4e4;
     margin-bottom: 32px;
 }
 /*-----------------------------------------------------------------Bottom------------------------------------------------------------------*/
