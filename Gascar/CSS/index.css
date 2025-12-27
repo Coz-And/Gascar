@@ -130,8 +130,11 @@ body {
 
 /*-----------------------------------------------------------------CTA------------------------------------------------------------------*/
 .cta{
-    padding: 80px 40px;
-    background-color: #f6f7f8;
+    height: 80vh;
+    background-image: url("../img/auto-elettriche-ricarica-presso-la-stazione-di-ricarica-e-con-uno-sfondo-di-turbina-eolica.webp");
+    background-size: cover;        /* riempie il riquadro */
+    background-position: center;   /* centra l’immagine */
+    background-repeat: no-repeat;
 }
 .cta h2{
     font-size: 32px;
@@ -140,6 +143,15 @@ body {
 .cta p {
     margin-bottom: 24px;
     color: #555;
+}
+.cta content {
+    height: 80vh;
+  background-image: url("../img/auto-elettriche-ricarica-presso-la-stazione-di-ricarica-e-con-uno-sfondo-di-turbina-eolica.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 /*-----------------------------------------------------------------footer------------------------------------------------------------------*/
