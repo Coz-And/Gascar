@@ -1,0 +1,54 @@
+@model AdminDashboardViewModel
+@{
+    Layout = "_Layout";
+}
+
+<h1>Dashboard Amministratore</h1>
+
+<hr />
+
+<h2>Posti Auto</h2>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Stato</th>
+    </tr>
+    @foreach (var spot in Model.ParkingSpots)
+    {
+        <tr>
+            <td>@spot.Id</td>
+            <td>
+                @(spot.IsOccupied ? "Occupato ❌" : "Libero ✅")
+            </td>
+        </tr>
+    }
+</table>
+
+<hr />
+
+<h2>MWBot</h2>
+<p>
+    Stato:
+    <strong>
+        @(Model.MWBot?.IsAvailable == true ? "Disponibile 🤖" : "In ricarica 🔌")
+    </strong>
+</p>
+
+<hr />
+
+<h2> Richieste di ricarica</h2>
+<table border="1">
+    <tr>
+        <th>Auto</th>
+        <th>Percentuale richiesta</th>
+        <th>Stato</th>
+    </tr>
+    @foreach (var req in Model.ChargingRequests)
+    {
+        <tr>
+            <td>@req.CarId</td>
+            <td>@req.RequestedPercentage %</td>
+            <td>@req.Status</td>
+        </tr>
+    }
+</table>
