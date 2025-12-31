@@ -4,7 +4,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseInMemoryDatabase("gascardb"));
 
 builder.Services.AddScoped<IChargingService, ChargingService>();
-
+builder.Services.AddHostedService<MWBotBackgroundService>();
 builder.Services.AddControllers();
 
 var app = builder.Build();

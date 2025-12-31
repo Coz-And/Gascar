@@ -33,15 +33,30 @@ public class MWBotBackgroundService : BackgroundService
 
                 if (nextRequest != null)
                 {
-                    // Inizia la ricarica
+                    // 🔌 INIZIO RICARICA
                     mwbot.IsAvailable = false;
                     nextRequest.Status = "Charging";
                     context.SaveChanges();
 
-                    // Simula tempo di ricarica (10 secondi)
-                    await Task.Delay(10000, stoppingToken);
+                    // 🚗 Recupero auto
+                    var car = context.Cars.Find(nextRequest.CarId);
 
-                    // Fine ricarica
+                    // ⚡ Calcolo energia da caricare (kWh)
+                    double energyNeeded =
+                        car.BatteryCapacityKw *
+                        (nextRequest.RequestedPercentage - car.CurrentChargePercentage) / 100.0;
+
+                    // ⏱️ Calcolo tempo di ricarica (ore)
+                    double hoursNeeded = energyNeeded / mwbot.PowerKw;
+
+                    // ⏳ Conversione in millisecondi (tempo ridotto per demo)
+                    int milliseconds = (int)(hoursNeeded * 3600 * 1000);
+                    milliseconds /= 360; // 1 ora reale = 10 secondi demo
+
+                    await Task.Delay(milliseconds, stoppingToken);
+
+                    // ✅ FINE RICARICA
+                    car.CurrentChargePercentage = nextRequest.RequestedPercentage;
                     nextRequest.Status = "Completed";
                     mwbot.IsAvailable = true;
                     context.SaveChanges();
