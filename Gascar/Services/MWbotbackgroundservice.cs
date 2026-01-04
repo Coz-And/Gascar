@@ -57,13 +57,24 @@ public class MWBotBackgroundService : BackgroundService
 
                     //FINE RICARICA
                     car.CurrentChargePercentage = nextRequest.RequestedPercentage;
+                    car.CurrentChargePercentage = nextRequest.RequestedPercentage;
                     nextRequest.Status = "Completed";
                     mwbot.IsAvailable = true;
-                    context.SaveChanges();
-                }
-            }
 
-            await Task.Delay(5000, stoppingToken);
-        }
-    }
-}
+                    // 🔔 NOTIFICA ALL'UTENTE
+                    context.Notifications.Add(new Notification
+                    {
+                        UserId = nextRequest.UserId,
+                        Message = "La ricarica della tua auto è stata completata.",
+                        IsRead = false,
+                        Date = DateTime.Now
+                    });
+                    context.SaveChanges();
+
+                                    }
+                                }
+
+                                await Task.Delay(5000, stoppingToken);
+                            }
+                        }
+                    }

@@ -11,4 +11,6 @@ public class ApplicationDbContext : DbContext
     public DbSet<ChargingRequest> ChargingRequests { get; set; }
     public DbSet<Payment> Payments { get; set; }
     public DbSet<MWBot> MWBots { get; set; }
+    public DbSet<Notification> Notifications { get; set; }
+
 }
