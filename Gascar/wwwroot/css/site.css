@@ -21,6 +21,8 @@ body {
   margin-bottom: 60px;
 }
 
+
+
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
   color: var(--bs-secondary-color);
   text-align: end;
@@ -28,4 +30,142 @@ body {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
+}
+/* Reset di base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Variabili di colore */
+:root {
+    --primary: #0066ff;
+    --bg: #f9fafb;
+    --text: #333;
+    --light: #fff;
+}
+
+/* Tipografia */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+/* Contenitore centrale */
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+/* Header */
+.site-header {
+    background: var(--light);
+    border-bottom: 1px solid #e5e7eb;
+}
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+.nav {
+    display: flex;
+    gap: 1.5rem;
+}
+.nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+}
+.nav a:hover {
+    color: var(--primary);
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, var(--primary), #0099ff);
+    color: var(--light);
+    padding: 4rem 0;
+    text-align: center;
+}
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.btn-primary {
+    display: inline-block;
+    background: var(--light);
+    color: var(--primary);
+    padding: .75rem 1.5rem;
+    border-radius: .4rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn-primary:hover {
+    background: #e0eaff;
+}
+
+/* Features */
+.features {
+    padding: 3rem 0;
+    background: var(--light);
+}
+.features h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    flex: 1 1 250px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform .2s, box-shadow .2s;
+}
+.card h4 {
+    margin-bottom: .5rem;
+    color: var(--primary);
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+/* Footer */
+.site-footer {
+    background: var(--text);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .9rem;
+}
+
+/* Responsività */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .5rem;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
 }

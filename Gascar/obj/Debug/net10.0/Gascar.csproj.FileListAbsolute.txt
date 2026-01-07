@@ -148,7 +148,6 @@ D:\Documents\GitHub\Gascar\Gascar\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
 D:\Documents\GitHub\Gascar\Gascar\obj\Debug\net10.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 D:\Documents\GitHub\Gascar\Gascar\obj\Debug\net10.0\scopedcss\bundle\Gascar.styles.css
 D:\Documents\GitHub\Gascar\Gascar\obj\Debug\net10.0\scopedcss\projectbundle\Gascar.bundle.scp.css
-D:\Documents\GitHub\Gascar\Gascar\obj\Debug\net10.0\compressed\wvz1rn3ocg-{0}-b9sayid5wm-b9sayid5wm.gz
 D:\Documents\GitHub\Gascar\Gascar\obj\Debug\net10.0\compressed\8pdzenq5nx-{0}-61n19gt1b8-61n19gt1b8.gz
 D:\Documents\GitHub\Gascar\Gascar\obj\Debug\net10.0\compressed\yhpxa2i4v0-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 D:\Documents\GitHub\Gascar\Gascar\obj\Debug\net10.0\compressed\neuquweu71-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -210,8 +209,6 @@ D:\Documents\GitHub\Gascar\Gascar\obj\Debug\net10.0\compressed\ouwfk2vtki-{0}-2z
 D:\Documents\GitHub\Gascar\Gascar\obj\Debug\net10.0\compressed\ikkuu91yek-{0}-muycvpuwrr-muycvpuwrr.gz
 D:\Documents\GitHub\Gascar\Gascar\obj\Debug\net10.0\compressed\8yjozoqs9e-{0}-87fc7y1x7t-87fc7y1x7t.gz
 D:\Documents\GitHub\Gascar\Gascar\obj\Debug\net10.0\compressed\gk7vvp4ybj-{0}-mlv21k5csn-mlv21k5csn.gz
-D:\Documents\GitHub\Gascar\Gascar\obj\Debug\net10.0\compressed\0lh1wavvyd-{0}-0kcpdf90xa-0kcpdf90xa.gz
-D:\Documents\GitHub\Gascar\Gascar\obj\Debug\net10.0\compressed\3s2krde8sc-{0}-0kcpdf90xa-0kcpdf90xa.gz
 D:\Documents\GitHub\Gascar\Gascar\obj\Debug\net10.0\staticwebassets.build.json
 D:\Documents\GitHub\Gascar\Gascar\obj\Debug\net10.0\staticwebassets.build.json.cache
 D:\Documents\GitHub\Gascar\Gascar\obj\Debug\net10.0\staticwebassets.development.json
@@ -453,3 +450,7 @@ C:\Users\andrea.cozzi\Documents\GitHub\Gascar\GASCAR\gascar\obj\Debug\net10.0\re
 C:\Users\andrea.cozzi\Documents\GitHub\Gascar\GASCAR\gascar\obj\Debug\net10.0\Gascar.pdb
 C:\Users\andrea.cozzi\Documents\GitHub\Gascar\GASCAR\gascar\obj\Debug\net10.0\Gascar.genruntimeconfig.cache
 C:\Users\andrea.cozzi\Documents\GitHub\Gascar\GASCAR\gascar\obj\Debug\net10.0\ref\Gascar.dll
+D:\Documents\GitHub\Gascar\gascar\obj\Debug\net10.0\Gascar.sourcelink.json
+D:\Documents\GitHub\Gascar\gascar\obj\Debug\net10.0\compressed\0lh1wavvyd-{0}-8tsy3o2uym-8tsy3o2uym.gz
+D:\Documents\GitHub\Gascar\gascar\obj\Debug\net10.0\compressed\3s2krde8sc-{0}-8tsy3o2uym-8tsy3o2uym.gz
+D:\Documents\GitHub\Gascar\gascar\obj\Debug\net10.0\compressed\wvz1rn3ocg-{0}-u4khvompdk-u4khvompdk.gz

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gascar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1598a495d5811747d77a9906abc71cea7b1e1aa1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1108f43787fe71b7d269302ff38a012bb646078")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gascar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gascar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

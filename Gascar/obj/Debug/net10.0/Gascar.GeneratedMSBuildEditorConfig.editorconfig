@@ -19,45 +19,49 @@ build_property.TargetFrameworkIdentifier = .NETCoreApp
 build_property.TargetFrameworkVersion = v10.0
 build_property.RootNamespace = Gascar
 build_property.RootNamespace = Gascar
-build_property.ProjectDir = C:\Users\andrea.cozzi\Documents\GitHub\Gascar\GASCAR\gascar\
+build_property.ProjectDir = D:\Documents\GitHub\Gascar\gascar\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\andrea.cozzi\Documents\GitHub\Gascar\GASCAR\gascar
+build_property.MSBuildProjectDirectory = D:\Documents\GitHub\Gascar\gascar
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/andrea.cozzi/Documents/GitHub/Gascar/GASCAR/gascar/Pages/Error.cshtml]
+[D:/Documents/GitHub/Gascar/gascar/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andrea.cozzi/Documents/GitHub/Gascar/GASCAR/gascar/Pages/Index.cshtml]
+[D:/Documents/GitHub/Gascar/gascar/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andrea.cozzi/Documents/GitHub/Gascar/GASCAR/gascar/Pages/login.cshtml]
+[D:/Documents/GitHub/Gascar/gascar/Pages/login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andrea.cozzi/Documents/GitHub/Gascar/GASCAR/gascar/Pages/Privacy.cshtml]
+[D:/Documents/GitHub/Gascar/gascar/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andrea.cozzi/Documents/GitHub/Gascar/GASCAR/gascar/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Documents/GitHub/Gascar/gascar/Pages/register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/GitHub/Gascar/gascar/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andrea.cozzi/Documents/GitHub/Gascar/GASCAR/gascar/Pages/_ViewImports.cshtml]
+[D:/Documents/GitHub/Gascar/gascar/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andrea.cozzi/Documents/GitHub/Gascar/GASCAR/gascar/Pages/_ViewStart.cshtml]
+[D:/Documents/GitHub/Gascar/gascar/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andrea.cozzi/Documents/GitHub/Gascar/GASCAR/gascar/Pages/Shared/_Layout.cshtml]
+[D:/Documents/GitHub/Gascar/gascar/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-azh43m9bhn

@@ -1,23 +1,44 @@
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Security.Claims;
+
+namespace Gascar.Pages;
 
 public class LoginModel : PageModel
 {
     [BindProperty]
-    public string Username { get; set; }
+    public string? Username { get; set; }
 
     [BindProperty]
-    public string Password { get; set; }
+    public string? Password { get; set; }
 
-    public IActionResult OnPost()
+    public string? ErrorMessage { get; set; }
+
+    public async Task<IActionResult> OnPostAsync()
     {
         if (Username == "admin" && Password == "admin123")
         {
-            return RedirectToPage("/Admin");
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.Name, Username!)
+            };
+
+            var identity = new ClaimsIdentity(
+                claims,
+                CookieAuthenticationDefaults.AuthenticationScheme);
+
+            var principal = new ClaimsPrincipal(identity);
+
+            await HttpContext.SignInAsync(
+                CookieAuthenticationDefaults.AuthenticationScheme,
+                principal);
+
+            return RedirectToPage("/Index");
         }
 
+        ErrorMessage = "Credenziali non valide";
         return Page();
     }
-     public string ErrorMessage { get; set; }
 }
-

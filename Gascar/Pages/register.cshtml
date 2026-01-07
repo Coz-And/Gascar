@@ -1,7 +1,7 @@
 @page
-@model LoginModel
+@model RegisterModel
 @{
-    ViewData["Title"] = "Login";
+    ViewData["Title"] = "Registrazione";
 }
 
 <div class="auth-container">
@@ -19,15 +19,25 @@
             <input asp-for="Username" required />
         </div>
         <div class="field">
+            <label>Email</label>
+            <input asp-for="Email" type="email" required />
+        </div>
+
+        <div class="field">
             <label>Password</label>
             <input asp-for="Password" type="password" required />
         </div>
 
+        <div class="field">
+            <label>Conferma Password</label>
+            <input asp-for="ConfirmPassword" type="password" required />
+        </div>
 
-        <button type="submit" class="btn">Login</button>
+        <button type="submit" class="btn">Registrati</button>
 
         <p class="switch">
-            non hai un account?
-            <a asp-page="/Register">Registrati</a>
+            Hai già un account?
+            <a asp-page="/Login">Accedi</a>
         </p>
     </form>
+</div>
