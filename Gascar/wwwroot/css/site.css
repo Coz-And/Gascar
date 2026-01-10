@@ -1,171 +1,79 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-  margin-bottom: 60px;
+  background: #0b0f19;
+  color: white;
 }
 
-
-
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
-}
-
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
-}
-/* Reset di base */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* Variabili di colore */
-:root {
-    --primary: #0066ff;
-    --bg: #f9fafb;
-    --text: #333;
-    --light: #fff;
-}
-
-/* Tipografia */
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--text);
-    background-color: var(--bg);
-}
-
-/* Contenitore centrale */
-.container {
-    width: min(90%, 1200px);
-    margin: 0 auto;
-    padding: 1rem 0;
-}
-
-/* Header */
-.site-header {
-    background: var(--light);
-    border-bottom: 1px solid #e5e7eb;
-}
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--primary);
-}
-.nav {
-    display: flex;
-    gap: 1.5rem;
-}
-.nav a {
-    text-decoration: none;
-    color: var(--text);
-    font-weight: 500;
-}
-.nav a:hover {
-    color: var(--primary);
-}
-
-/* Hero */
+/* HERO */
 .hero {
-    background: linear-gradient(135deg, var(--primary), #0099ff);
-    color: var(--light);
-    padding: 4rem 0;
-    text-align: center;
+  height: 100vh;
+  background: linear-gradient(120deg, #0b0f19, #0f1b2d);
+  padding: 40px;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.hero-content {
+  margin-top: 120px;
+  max-width: 500px;
+}
+
 .hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: .5rem;
-}
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-}
-.btn-primary {
-    display: inline-block;
-    background: var(--light);
-    color: var(--primary);
-    padding: .75rem 1.5rem;
-    border-radius: .4rem;
-    text-decoration: none;
-    font-weight: 600;
-}
-.btn-primary:hover {
-    background: #e0eaff;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
-/* Features */
+.hero button {
+  background: #00ff99;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* FEATURES */
 .features {
-    padding: 3rem 0;
-    background: var(--light);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 80px;
+  background: #101826;
 }
-.features h3 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-}
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-}
+
 .card {
-    background: #fff;
-    border: 1px solid #e5e7eb;
-    border-radius: .5rem;
-    padding: 1.5rem;
-    flex: 1 1 250px;
-    max-width: 300px;
-    text-align: center;
-    transition: transform .2s, box-shadow .2s;
+  background: #151f30;
+  padding: 30px;
+  border-radius: 20px;
+  width: 250px;
+  text-align: center;
+  transition: 0.3s;
 }
-.card h4 {
-    margin-bottom: .5rem;
-    color: var(--primary);
-}
+
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #00ff99;
 }
 
-/* Footer */
-.site-footer {
-    background: var(--text);
-    color: var(--light);
-    text-align: center;
-    padding: 1rem 0;
-    font-size: .9rem;
-}
-
-/* Responsività */
-@media (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: .5rem;
-    }
-    .hero h2 {
-        font-size: 2rem;
-    }
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #0b0f19;
 }

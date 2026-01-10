@@ -1,62 +1,51 @@
 ﻿@page
 @model IndexModel
 
-<!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template Moderno</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GASCAR</title>
+  <link rel="stylesheet" href="~/css/site.css">
 </head>
 <body>
 
-<header class="site-header">
-    <div class="container">
-        <h1 class="logo">MySite</h1>
-        <nav class="nav">
-            <a href="#">Home</a>
-            <a href="#">Servizi</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contatti</a>
-        </nav>
-    </div>
+<header class="hero">
+  <nav>
+    <h1>GASCAR</h1>
+    <ul>
+      <li><a asp-page="/Login">Login</a></li>
+      <li><a asp-page="/Register">Registrati</a></li>
+      <li>b</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-content">
+    <h2>Il futuro della mobilità elettrica</h2>
+    <p>Controlla, monitora e ricarica la tua auto elettrica con un’unica app.</p>
+    <button>Scarica l’app</button>
+  </div>
 </header>
 
-<main class="site-main">
-    <section class="hero">
-        <div class="container">
-            <h2>Benvenuto nel nostro sito</h2>
-            <p>Un design pulito, moderno e totalmente responsive.</p>
-            <a href="#" class="btn-primary">Scopri di più</a>
-        </div>
-    </section>
+<section class="features">
+  <div class="card">
+    <h3>Batteria</h3>
+    <p>Controlla la carica in tempo reale</p>
+  </div>
+  <div class="card">
+    <h3>GPS</h3>
+    <p>Trova la tua auto ovunque</p>
+  </div>
+  <div class="card">
+    <h3>Ricarica</h3>
+    <p>Trova colonnine vicine</p>
+  </div>
+</section>
 
-    <section class="features">
-        <div class="container">
-            <h3>Cosa offriamo</h3>
-            <div class="cards">
-                <article class="card">
-                    <h4>Design UI/UX</h4>
-                    <p>Interfacce intuitive e accattivanti per ogni dispositivo.</p>
-                </article>
-                <article class="card">
-                    <h4>Sviluppo Front‑end</h4>
-                    <p>Codice pulito, performante e conforme agli standard web.</p>
-                </article>
-                <article class="card">
-                    <h4>Consulenza SEO</h4>
-                    <p>Ottimizzazione per migliorare la visibilità sui motori di ricerca.</p>
-                </article>
-            </div>
+<footer>
+  <div class="container">
+            &copy; 2026 - Gascar - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
-    </section>
-</main>
-
-<footer class="site-footer">
-    <div class="container">
-        <p>&copy; 2026 MySite – Tutti i diritti riservati.</p>
-    </div>
 </footer>
 
 </body>
